@@ -8,3 +8,4 @@
         npm i -g typescript
         npm i -g ts-node
     ```
+- files for typescript are saved with .ts extension.
