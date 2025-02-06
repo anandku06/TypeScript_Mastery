@@ -9,3 +9,12 @@
         npm i -g ts-node
     ```
 - files for typescript are saved with .ts extension.
+
+## Annotations
+- used to specify the datatype of a variable, parameter, function return value and other types of values.
+- help developers catch errors early in developement by allowing them to specify what types of values can be assigned toa given variable or passed argument to a function
+- syntax : 
+    ```typescript
+        // let varName: datatype = value;
+        let name: string = "Anand";
+    ```
