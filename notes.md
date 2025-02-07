@@ -22,3 +22,7 @@
 ## Type Inference
 - a feature in TS that allows the compiler to automatically determine the type of variable based on its value. In other words, if you declare a variable without explicitly specifying its type
 - TS will try to infer the type based on the value assign to it.
+
+## anyType
+- a special **any** type that can be used to represent any type.
+- a variable is annotated with any type, TS will allow it to have **any** value and disable all type checking for that variable and its properties.
