@@ -26,3 +26,6 @@
 ## anyType
 - a special **any** type that can be used to represent any type.
 - a variable is annotated with any type, TS will allow it to have **any** value and disable all type checking for that variable and its properties.
+    - while the *any* type can be useful in certain situations, it should be used sparingly.
+    - overuse of this can lead to *untyped code* and make it harder to catch type-related bugs during developement
+    - it's generally better to use more specific types whenever possible to get the benefits of TS's type checking.  
