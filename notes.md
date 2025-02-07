@@ -34,7 +34,12 @@
 - are used to specify the expected types of the parameters that a function takes
 - TS will give you warning if you provide more or less args than you specify in your params area
 - ```typescript
-    function name(param : type) {}
-```
-    ### Default Params
+    function name(param : type) {
+        // body
+    }
+    ```
+    ### Default Params ###
     - if args are not specified then params can be defaulted during function declaration
+
+    ### Return annotation
+    - specifying the type of data the function is supposed to be return
