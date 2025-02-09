@@ -54,6 +54,13 @@
 - useful for indicating that certain code paths should never be reached
 - help catch errors at compile-time instead of run-time
     - Applications:
-        a function that always throws error
-        a function that has an infinite loop
-        a variable that can never have a value
+        * a function that always throws error
+        * a function that has an infinite loop
+        * a variable that can never have a value
+
+## Arrays in TS
+- a type of object that can store multiple values of the same datatype.
+- arrays in TS are **typed**, which means you can specify the type of values that array can hold
+    - 2 ways to initialise an array:
+        * using the square brackets[] to indicate an array of a specific type
+        * using the generic ```Array<type>``` notation to indicate an array of a specific type
