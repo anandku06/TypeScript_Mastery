@@ -43,3 +43,8 @@
 
     ### Return annotation
     - specifying the type of data the function is supposed to be return
+
+## VOID in TypeScript
+- a type that represents the absence of any value
+- often used as the return type for functions that don't return a value
+- default return type is void for the function without return statement
