@@ -48,3 +48,12 @@
 - a type that represents the absence of any value
 - often used as the return type for functions that don't return a value
 - default return type is void for the function without return statement
+
+## NEVER in TypeScript
+- used to indicate that a function will not return anything, or a variable can never have a value
+- useful for indicating that certain code paths should never be reached
+- help catch errors at compile-time instead of run-time
+    - Applications:
+        a function that always throws error
+        a function that has an infinite loop
+        a variable that can never have a value
