@@ -64,3 +64,7 @@
     - 2 ways to initialise an array:
         * using the square brackets[] to indicate an array of a specific type
         * using the generic ```Array<type>``` notation to indicate an array of a specific type
+
+## Multi-Dimensional Arrays
+- an array that contains other arrays as its elements. 
+- defined using the same notation as one-dimensional arrays, but with nested square brackets
