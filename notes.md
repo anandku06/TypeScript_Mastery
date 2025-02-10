@@ -68,3 +68,18 @@
 ## Multi-Dimensional Arrays
 - an array that contains other arrays as its elements. 
 - defined using the same notation as one-dimensional arrays, but with nested square brackets
+
+## Objects in TS
+- a structured data type that represents a collection of properties, each with a key and an associated value
+- properties of an object can have specific types, and the object itself can be annoted with a type, often defined using an interface or a type alias.
+- uses structural typing, meaning that the shape of an object (its structure or properties) is what matters for type compatibility
+- Syntax -> 'type varName (annotation/types) = {property : value}'
+```typescript
+    // this is how a object looks like
+    const person: {firstName: string, lastName: string, age: number} = {
+        firstName : "Anand",
+        lastName : "Kumar",
+        age : 20
+    }
+
+```
