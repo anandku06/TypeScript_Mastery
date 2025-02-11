@@ -94,3 +94,13 @@
         age : number
     }
 ```
+
+## Optional Properties
+- make a certain property optional in an object type by adding a question mark(?) after the property name.
+```typescript
+    type Person = {
+        name : string,
+        age : number,
+        email? : string
+    }
+```
