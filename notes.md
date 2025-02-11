@@ -106,3 +106,7 @@
 ```
 - ### readonly Property : 
     makes any object's property readonly i.e it can't be modified
+
+## Intersection Types
+- a way to combine multiple types into a single type that includes all the properties and methods of each constituent type.
+- is denoted by the *&* symbol.
