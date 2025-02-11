@@ -83,3 +83,14 @@
     }
 
 ```
+
+## TypeAliases in TypeScript
+- a way to create a new name for an existing type.
+- allows you to define a custom type that refers to another type and give it a more meaningful or descriptive name
+- defined using the type keyword followed by the name of the alias, an equal sign(=), and the type it refers to
+```typescript
+    type Person = {
+        name : string,
+        age : number
+    }
+```
