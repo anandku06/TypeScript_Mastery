@@ -104,3 +104,5 @@
         email? : string
     }
 ```
+- ### readonly Property : 
+    makes any object's property readonly i.e it can't be modified
