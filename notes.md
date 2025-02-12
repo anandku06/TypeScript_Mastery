@@ -154,3 +154,17 @@
     let [first, second] = arr
     // now this tuple is destructured 
 ```
+
+## ENUM in TS
+- a way to define a set of **named constants**
+- allow you to define a collection of related values that can be used interchangebly in the code
+```typescript
+    // for example
+    enum WeatherConditions{
+        Sunny,
+        Cloudy,
+        Rainy,
+        Snowy
+    }
+    // here this enum has values and each of them is assigned an automatic numerical value starting from 0
+```
