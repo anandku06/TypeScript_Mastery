@@ -110,3 +110,8 @@
 ## Intersection Types
 - a way to combine multiple types into a single type that includes all the properties and methods of each constituent type.
 - is denoted by the *&* symbol.
+
+## Unions
+- used to declare a type that can have one of several possible types.
+- useful when we want to allow a variable or parameter to accept **multiple type**
+- syntax for defining a union type in TS uses the pipe symbol **(|)**
