@@ -140,3 +140,11 @@
     let varName: "value1" | "value2" | "value3";
     // no value other than these is accepted
 ```
+
+## Tuples in TS
+- a type that represents an array with a **fixed number of elements**, where each element can have a different type
+- order of the types in the tuple definition corresponds to the order of the values in the actual array
+- similar to arrays, but they have a specific structure and can be used to model sequences with known lengths
+```typescript
+    let arr: [string, number] = ["string", 123]
+```
