@@ -132,3 +132,11 @@
             myProp: string | number;
         }
      ```
+
+## Literal Types
+- allows you to specify a value that can only be **one specific literal value**
+- means that a variable with a literal type can only have one specific value and no other
+```typescript
+    let varName: "value1" | "value2" | "value3";
+    // no value other than these is accepted
+```
