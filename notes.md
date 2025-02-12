@@ -148,3 +148,9 @@
 ```typescript
     let arr: [string, number] = ["string", 123]
 ```
+- ### Destructuring:
+```typescript
+    let arr: [string, number] = ["string", 123]
+    let [first, second] = arr
+    // now this tuple is destructured 
+```
