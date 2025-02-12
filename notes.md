@@ -115,3 +115,20 @@
 - used to declare a type that can have one of several possible types.
 - useful when we want to allow a variable or parameter to accept **multiple type**
 - syntax for defining a union type in TS uses the pipe symbol **(|)**
+- Applications
+    - in variables
+     ```typescript
+        let myVar: number | string; 
+     ```
+
+    - with function parameters as well
+     ```typescript
+        function foo(param: string | string[]){}
+     ```
+
+    - with interfaces as well
+     ```typescript
+        interface MyInterface{
+            myProp: string | number;
+        }
+     ```
