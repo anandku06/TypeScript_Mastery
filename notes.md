@@ -172,3 +172,11 @@
 ## Class Properties Annotations
 - annotate class properties with a type.
 - allows you to define the datatype of the property and ensure that it is always consistent
+
+## Access Modifiers
+- In TS, you can use access modifiers to control the visibility of class members (properties and methods)
+- Access modifiers determine the ways in which class members can be accessed from within and outside the class
+- **three** types of access modifiers in TS
+    - Public : members marked as public can be accessed from anywhere, both inside and outside the class.
+    - Private : members marked as private can pnly be accessed from within the class they are defined in. 
+    - Protected : members marked as protected can be accesssed from within the class they are defined in, as well as any subclasses that extend the class

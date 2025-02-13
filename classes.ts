@@ -14,4 +14,4 @@ export class Person{
 const man = new Person("Anand", 20)
 console.log(man);
 
-man.age = 24 // gives an error; can't be modified
+// man.age = 24 // gives an error; can't be modified
