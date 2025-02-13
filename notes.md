@@ -168,3 +168,7 @@
     }
     // here this enum has values and each of them is assigned an automatic numerical value starting from 0
 ```
+
+## Class Properties Annotations
+- annotate class properties with a type.
+- allows you to define the datatype of the property and ensure that it is always consistent
