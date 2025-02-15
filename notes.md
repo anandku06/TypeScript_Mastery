@@ -180,3 +180,8 @@
     - Public : members marked as public can be accessed from anywhere, both inside and outside the class.
     - Private : members marked as private can pnly be accessed from within the class they are defined in. 
     - Protected : members marked as protected can be accesssed from within the class they are defined in, as well as any subclasses that extend the class
+
+## Getters and Setters
+- used to access and modify class properties
+- Getters and Setters allow you to define a property in a class that looks like a simple variable from the outside but internally has additional logic for getting and setting the value
+- mainly used to handle the private members of the class
