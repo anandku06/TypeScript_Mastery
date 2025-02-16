@@ -126,3 +126,33 @@ class Car implements Vehicle{
 const car1 = new Car("BMW")
 car1.start()
 car1.stop()
+
+
+ //  Declaration Merging
+
+ // Car interface is defined here
+ interface Car1{
+    brand : string
+    start() : void
+ }
+
+ // again to add some more values or properties we again declared with the same declaration
+ interface Car1{
+    model : string
+    stop() : void
+ }
+
+ // now the Car1 interface takes all the properties that are defined two times in it
+const myCar : Car1 = {
+    brand : "BMW",
+    model : "M4 Competition",
+    start() {
+        console.log(`${this.model} is starting!!`)
+    },
+    stop(){
+        console.log(`${this.model} is stopped!!`)
+    }
+}
+
+myCar.start()
+myCar.stop()
