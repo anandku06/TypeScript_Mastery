@@ -45,31 +45,61 @@ const add: MathOperation = (a, b) => a + b;
 const subtract: MathOperation = (a, b) => a - b;
 
 // console.log(add("12", "34")) // if given params other than number then error is thrown
-console.log(add(12, 34)); 
-console.log(subtract(12, 34)); 
+console.log(add(12, 34));
+console.log(subtract(12, 34));
 
 // interfaces for methods
-export interface Person{
-    fName : string
-    lName : string
-    age : number
-    sayHello() : void
+export interface Person {
+  fName: string;
+  lName: string;
+  age: number;
+  sayHello(): void;
 }
 
-function greet(person : Person){
-    console.log(`Hello, ${person.fName} ${person.lName}`)
-    person.sayHello()
+function greet(person: Person) {
+  console.log(`Hello, ${person.fName} ${person.lName}`);
+  person.sayHello();
 }
 
-const John : Person = {
-    fName : "John",
-    lName : "Wick",
-    age : 30,
-    sayHello() {
-        console.log("Hi there!!")
-    },
+const John: Person = {
+  fName: "John",
+  lName: "Wick",
+  age: 30,
+  sayHello() {
+    console.log("Hi there!!");
+  },
+};
+
+greet(John);
+console.log(John);
+John.sayHello();
+
+interface MovieDetails {
+  readonly name: string;
+  ratings: number;
+  printMovieInfo(
+    name: string,
+    price: number,
+    ratings?: number
+  ): string | number;
 }
 
-greet(John)
-console.log(John)
-John.sayHello()
+interface MovieGenre extends MovieDetails {
+  genre: string;
+}
+// here the MovieGenre inherits the properties of the MovieDetails interface
+
+const movie3: MovieGenre = {
+  name: "Final Destination 2",
+  ratings: 9.1,
+  printMovieInfo(name, price, ratings) {
+    return `Movie Name : ${name}, Price : ${price}, Ratings : ${ratings}`;
+  },
+  // these properties for the parent interface and then the inheriting interface
+  genre: "Thriller",
+};
+// here both the interfaces are satisfied
+
+const res = movie3.printMovieInfo("John Wick 2", 129.99)
+
+console.log(res)
