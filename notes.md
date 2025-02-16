@@ -185,3 +185,8 @@
 - used to access and modify class properties
 - Getters and Setters allow you to define a property in a class that looks like a simple variable from the outside but internally has additional logic for getting and setting the value
 - mainly used to handle the private members of the class
+
+## Interfaces
+- a way to define a contract for the shape of an object
+- specifies the properties and thier types that an object must have
+- a powerful tool for enforcing a certain structure in your code
