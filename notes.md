@@ -192,3 +192,10 @@
 - a powerful tool for enforcing a certain structure in your code
 - while interfaces are commonly used to define the structure of objects, they are not limited to just objects.
 - can also be used to describe the shape of functions and classes
+
+## Declaration Merging
+- Once an interface is declared, it can't be directly modified
+- However, TS allows what is informally referred to as **declaration merging** or *interface extension*, which is often known misconstructed as *re-opening*
+
+- **Declaration merging** in TS refers to the ability to extend or argument an existing declaration, including interfaces.
+- this can be useful when you want to add new properties or methods to an existing interfaces without modifying the original declaration
