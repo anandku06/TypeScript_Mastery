@@ -103,3 +103,26 @@ const movie3: MovieGenre = {
 const res = movie3.printMovieInfo("John Wick 2", 129.99)
 
 console.log(res)
+
+interface Vehicle{
+    start() : void
+    stop() : void
+}
+
+class Car implements Vehicle{
+    name : string
+    constructor(name : string){
+        this.name = name
+    }
+    start(): void {
+        console.log(`${this.name} is starting!!`)
+    }
+
+    stop(): void {
+        console.log(`${this.name} is stopped now!!`)
+    }
+}
+
+const car1 = new Car("BMW")
+car1.start()
+car1.stop()
