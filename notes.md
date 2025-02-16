@@ -190,3 +190,5 @@
 - a way to define a contract for the shape of an object
 - specifies the properties and thier types that an object must have
 - a powerful tool for enforcing a certain structure in your code
+- while interfaces are commonly used to define the structure of objects, they are not limited to just objects.
+- can also be used to describe the shape of functions and classes
