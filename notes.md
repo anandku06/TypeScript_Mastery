@@ -199,3 +199,17 @@
 
 - **Declaration merging** in TS refers to the ability to extend or argument an existing declaration, including interfaces.
 - this can be useful when you want to add new properties or methods to an existing interfaces without modifying the original declaration
+
+## Generics
+- allows you to create resuable components that can work with a variety of types.
+- makes it possible for you to define functions, classes and interfaces that can work with *different data types* without having to duplicate code.
+```typescript
+    // simple function declaration
+    // const printMessage = (x : string) => console.log(x); here this "x : string" is a function parameter which is annotated as string
+
+    // using generics
+    function printInfo<T>(x : <T>): T {
+        return x;
+    }
+    // here this "<T>" is called Type Parameter, which takes the type in which for the parameters or the return value of the function
+```
