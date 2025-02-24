@@ -212,4 +212,6 @@
         return x;
     }
     // here this "<T>" is called Type Parameter, which takes the type in which for the parameters or the return value of the function
+
+    printInfo<number>(23) // that's how you call it
 ```
