@@ -215,3 +215,12 @@
 
     printInfo<number>(23) // that's how you call it
 ```
+
+## Type Narrowing
+- process of refining a variable's type within a conditional block of code. 
+- This allows you to write more precise and type-safe code.
+- TS provides several mechanisms for type narrowings:
+    - Type guards -> mechanisms thet help TS understand and narrow down the types more precisely. One common type guard is the *typeOf* operator
+    - *instanceOf* operator
+    - instersection types
+    - discriminated operators
