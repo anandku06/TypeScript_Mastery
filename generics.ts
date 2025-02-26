@@ -69,3 +69,49 @@ const stringArr = ["apple", "banana", "cherry", "date"]
 const stringWords = filterArray<string>(stringArr, (str) => str.length < 5)
 
 console.log(stringWords)
+
+
+// interfaces using generics
+interface Fruit{
+  name : string,
+  color : string
+}
+
+const fruitArray : Fruit[] = [
+  {name : "apple", color : "red"},
+  {name : "banana", color : "yellow"},
+  {name : "cherry", color : "red"},
+]
+
+const redFruits = filterArray<Fruit>(fruitArray, (item) => item.color === "red")
+console.log(redFruits)
+
+// now two types of generics together
+function reversePair<T, U>(value1 : T, value2 : U) : [U, T]{
+  return [value2, value1]
+}
+
+const revPairs = reversePair<number, string>(234, "Hello")
+console.log(revPairs) 
+
+// Generic classes
+class Box<T>{
+  private content : T
+
+  constructor(initalContent : T){
+    this.content = initalContent
+  }
+
+  getContent() : T{
+    return this.content
+  }
+
+  setContent(newContent : T) : void{
+    this.content = newContent
+  }
+}
+
+const stringBox = new Box<string>("Hello, TypeScript")
+console.log(stringBox.getContent())
+stringBox.setContent("NO TypeScript!!")
+console.log(stringBox.getContent())
