@@ -39,6 +39,7 @@ console.log(
 );
 
 // one more example -> took an object and returning the keys and it's value randomly
+// obj: { [key: string]: T } -> this annotation tells that the parameter obj have keys dynamic in nature and the values are of generic type T
 function getRandomKeyValuePair<T>(obj: { [key: string]: T }): {
   key: string;
   value: T;
@@ -50,4 +51,21 @@ function getRandomKeyValuePair<T>(obj: { [key: string]: T }): {
 }
 
 const fruits = {a : "apple", b : "banana", c : "cherry"}
-console.log(getRandomKeyValuePair<string>(fruits)) // outputs the random keys and it's values
+console.log(getRandomKeyValuePair<string>(fruits)) // outputs the random keys and it's 
+
+const numObj = {one : 1, two : 2, three : 3}
+console.log(getRandomKeyValuePair<number>(numObj))
+
+// using generics to make a single function of filtering for all types of array 
+function filterArray<T>(array : T[], condition: (item: T) => boolean): T[] {
+  return array.filter((item) => condition(item))
+}
+
+const numArray = [1,2,3,4,5,6,7,8,9,10]
+const evenNumArray = filterArray<number>(numArray, (no) => no % 2 === 0)
+console.log(evenNumArray)
+
+const stringArr = ["apple", "banana", "cherry", "date"]
+const stringWords = filterArray<string>(stringArr, (str) => str.length < 5)
+
+console.log(stringWords)
