@@ -106,5 +106,12 @@
     "index.ts",
     "getters_setters.ts",
     "interfaces.ts"
-  ] // specifies an allowlist of files to include in the program. An error occurs if any of the files is not present
+  ], // specifies an allowlist of files to include in the program. An error occurs if any of the files is not present
+  "include": [
+    "src/**/*"
+  ], // here it means that all the files or folders in the src directory must be compiled
+  // Specifies a list of glob patterns that match files to be included in compilation
+  "exclude": [
+    "src/literals.ts"
+  ], // Specifies a list of files to be excluded from compilation.
 }
