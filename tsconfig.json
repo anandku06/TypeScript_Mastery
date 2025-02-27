@@ -99,5 +99,12 @@
     /* Completeness */
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
-  }
+  },
+  "files": [
+    "enums.ts",
+    "arrays.ts",
+    "index.ts",
+    "getters_setters.ts",
+    "interfaces.ts"
+  ] // specifies an allowlist of files to include in the program. An error occurs if any of the files is not present
 }
