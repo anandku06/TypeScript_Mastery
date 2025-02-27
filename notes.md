@@ -221,6 +221,6 @@
 - This allows you to write more precise and type-safe code.
 - TS provides several mechanisms for type narrowings:
     - Type guards -> mechanisms thet help TS understand and narrow down the types more precisely. One common type guard is the *typeOf* operator
-    - *instanceOf* operator
+    - *instanceOf* operator -> another type guard in TS that allows you to check whether an object is an instance of a particular class or constructor function
     - instersection types
     - discriminated operators
