@@ -41,3 +41,36 @@ function animalSound(animal: Dog | Cat) : void{
         animal.meow()
     }
 }
+
+animalSound(new Dog())
+animalSound(new Cat())
+
+// intersection type guard
+
+// made two type aliases
+type Employee = {
+    id : number
+    name : string,
+}
+
+type Manager = {
+    department : string,
+    role : string
+}
+
+// combined the two to make a new type that has all the properties of the two types
+type ManagerWithEmployeeInfo = Employee & Manager
+
+// now the new type has all the properties of the two types
+const manager : ManagerWithEmployeeInfo = {
+    id : 1213,
+    name : "John Doe",
+    department : "IT",
+    role : "Senior Tech Lead"
+}
+
+console.log(manager)
+console.log(manager.id)
+console.log(manager.name)
+console.log(manager.department)
+console.log(manager.role)
