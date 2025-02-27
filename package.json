@@ -1,0 +1,23 @@
+{
+  "name": "typescript_mastery",
+  "version": "1.0.0",
+  "description": "This repository contains all the TypeScript learnings for my Web Dev journey.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anandku06/TypeScript_Mastery.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anandku06/TypeScript_Mastery/issues"
+  },
+  "homepage": "https://github.com/anandku06/TypeScript_Mastery#readme",
+  "dependencies": {
+    "axios": "^1.8.1"
+  }
+}

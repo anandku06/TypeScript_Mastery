@@ -222,5 +222,13 @@
 - TS provides several mechanisms for type narrowings:
     - Type guards -> mechanisms thet help TS understand and narrow down the types more precisely. One common type guard is the *typeOf* operator
     - *instanceOf* operator -> another type guard in TS that allows you to check whether an object is an instance of a particular class or constructor function
-    - instersection types -> allows you to combine multiple types into a single type. The resulting type will have all the properties of each individual type. You create intersection type using the & operator
+    - *intersection types* -> allows you to combine multiple types into a single type. The resulting type will have all the properties of each individual type. You create intersection type using the & operator
     - discriminated operators
+
+## Some facts...
+- TypeScript is usually compiled in JavaScript then it is used by the browser
+- we use *tsc* cmd followed by the TS file to compile it to JS file
+- by manipulating the *ts.config.json* file, we can customise the compiler's behaviour and much more.
+
+## Declaration Files
+- files that has declarations regarding the properties or pre-defined keywords, etc. and contains all the properties of TS keywords
